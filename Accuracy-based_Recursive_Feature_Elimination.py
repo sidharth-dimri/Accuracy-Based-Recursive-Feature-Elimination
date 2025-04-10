@@ -8,6 +8,7 @@ import numpy as np
 This example uses KNN, but this method can be used with any ML model that has some sort of accuracy to it.
 For example, regression models can use Mean Squared Error (find the lowest MSE)
 """
+#function should be first called by x = ARFE(x,y)
 def ARFE(x,y,avgScoreOriginal=0):
     #if starting model score >= to normal, function ends
     #test original model
