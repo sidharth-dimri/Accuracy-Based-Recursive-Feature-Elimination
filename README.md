@@ -3,6 +3,7 @@ Code for an original algorithm for optimal feature elimination
 
 This algorithm is an original creation of my own, but does share some similarities to Recursive Feature Elimination, hence the similar name.
 The main difference between these two algorithms is that RFE calculates feature importance to remove the least important feature until desired feature count is reached. ARFE has a different goal, which is to find the optimal ML model accuracy with Feature Elimination. An unspecified amount of features will be removed to achieve maximum accuracy, rather than removing a certain amount of the least important features. 
+
 This algorithm can be used for feature reduction for any ML model, but is best with models that do not vary in accuracy or error within runs. The code given in this repository runs on a default KNN model, but can easily be modified for any scikit-learn model and hyperparameter selection.
 
 The importance of this algorithm is not necessarily efficiency; in fact, the algorithm is not the most efficient available algorithm for feature elimination. It's value lies in being a simple algorithm to both understand and use, correctly eliminating features for the optimal dataset for model performance and accuracy. It's useful mostly for beginning Machine Learning students like myself to better understand the process and necessity of feature selection.
