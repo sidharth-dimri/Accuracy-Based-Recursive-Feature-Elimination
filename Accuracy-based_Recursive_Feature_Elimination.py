@@ -23,9 +23,6 @@ def ARFE(x,y,avgScoreOriginal=0, n_neighbors=5, weights='uniform', algorithm='au
     #if starting model score >= to normal, function ends
     #test original model
     """
-    NOTE: I will not mess with hyperparameters since I am only interested in feature elimination
-    """
-    """
     If the avgScoreOriginal is passed before function call, this is skipped.
     This means that if a feature is dropped, avgScoreOriginal can be altered then and passed on without redundantly recalculating it when the function is recursively called
     However, you can call the function outside of recursion with just ARFE(x,y), since calculating avgScoreOriginal then saves no run time
